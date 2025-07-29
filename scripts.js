@@ -104,9 +104,15 @@ botaoPublicar.addEventListener("click", async (evento) => {
         const resultado = await publicarProjeto(nomeDoProjeto, descricaoDoProjeto, tagsProjeto)
         console.log(resultado)
         alert("Deu tudo certo!")
+
+        const formulario = document.querySelector("form")
+        formulario.reset()
+
+        imagemPrincipal.src = "./img/imagem1.png"
+        nomdeDaImagem.textContent = "imagem_projeto.png"
     } catch (error) {
         console.log("Deu ruim :( : ", error)
-        alert("Deu ruim enviar o projeto! :'(")
+        alert("Deu ruim enviar o projeto! :'(\n Tente novamente!")
     }
 
 })
