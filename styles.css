@@ -145,7 +145,13 @@ texarea {
     background-color: var(--itens-background);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    cursor: pointer;
     position: relative;
+}
+
+.botao-descartar:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--text-color);
 }
 
 .botao-descartar::after {
@@ -166,7 +172,14 @@ texarea {
     background-color: var(--primary-color);
     color: var(--background-color);
     border: none;
+    cursor: pointer;
     position: relative;
+}
+
+.botao-publicar:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--text-color);
+    color: var(--text-color);
 }
 
 .botao-publicar::after {
@@ -213,6 +226,12 @@ texarea {
     font-weight: 600;
     font-size: 18px;
     position: relative;
+    cursor: pointer;
+}
+
+.container-upload-imagem button:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .container-upload-imagem button::after {
